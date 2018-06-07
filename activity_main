@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text_name_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#707070"
+    android:visibility="visible"
+    tools:context="com.example.antho.devumg.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="123dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/devumg"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="logout"
+        android:text="@string/cerrar_sesi_n"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:theme="@style/Base.TextAppearance.AppCompat.Widget.Button.Colored" />
+
+    <TextView
+        android:id="@+id/text_name_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="86dp" />
+
+    <ImageView
+        android:id="@+id/imageView_user"
+        android:layout_width="116dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="136dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/com_facebook_profile_picture_blank_square" />
+
+
+</android.support.constraint.ConstraintLayout>
